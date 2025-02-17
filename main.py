@@ -5,6 +5,7 @@ import re
 from telegram import Update, InputFile
 from telegram.ext import Application, MessageHandler, filters, CallbackContext
 import instaloader
+from dotenv import dotenv_values
 
 # Logging configuration
 logging.basicConfig(
@@ -14,7 +15,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Telegram bot token (place the token you received from BotFather here)
-TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+TOKEN = dotenv_values('.env.secret')['BOT_TOKEN']
 
 
 # Function to check if the Instagram link is valid
