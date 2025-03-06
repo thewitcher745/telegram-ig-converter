@@ -37,17 +37,10 @@ pip install python-telegram-bot instaloader
 
 ## Configuration
 
-Set your Telegram bot token as an environment variable:
+Set your Telegram bot token as a value of the key "BOT_TOKEN" in a file called `.env.secret` in the project root:
 
 ```bash
-# On Linux/macOS
-export TELEGRAM_BOT_TOKEN="your_bot_token"
-
-# On Windows (Command Prompt)
-set TELEGRAM_BOT_TOKEN=your_bot_token
-
-# On Windows (PowerShell)
-$env:TELEGRAM_BOT_TOKEN="your_bot_token"
+BOT_TOKEN="8152094882:AAFEFstNeDxE9GfDyHy2k6Z4f3rBwMWQDYk"
 ```
 
 ## Usage
