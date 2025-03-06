@@ -21,7 +21,7 @@ A Telegram bot that automatically downloads Instagram posts and reels when links
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/instagram-telegram-bot.git
+git clone https://github.com/thewitcher745/telegram-ig-converter
 cd instagram-telegram-bot
 ```
 
@@ -40,7 +40,7 @@ pip install python-telegram-bot instaloader
 Set your Telegram bot token as a value of the key "BOT_TOKEN" in a file called `.env.secret` in the project root:
 
 ```bash
-BOT_TOKEN="8152094882:AAFEFstNeDxE9GfDyHy2k6Z4f3rBwMWQDYk"
+BOT_TOKEN="YOUR_BOT_TOKEN"
 ```
 
 ## Usage
@@ -76,15 +76,6 @@ This bot is designed with privacy in mind:
 2. Be aware of Instagram's rate limits and Terms of Service:
    - Excessive usage may result in temporary IP blocking
    - This bot is intended for personal use only
-
-## Deployment Options
-
-### Running with Docker
-
-```bash
-docker build -t instagram-telegram-bot .
-docker run -e TELEGRAM_BOT_TOKEN="your_bot_token" instagram-telegram-bot
-```
 
 ## Contributing
 
